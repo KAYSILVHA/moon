@@ -92,13 +92,16 @@ main section{
   display: flex;
   align-items: center;
   width: 100%;
-  font-size: 1.6em;
   justify-content: center;
+}
+
+.title-habits h2{
+  font-size: 1.2em;
 }
 
 
 .habits img{
-  max-width: 18vw;
+  max-width: 10vw;
   max-height: 10vh;
   margin-right: 10px;
 }
