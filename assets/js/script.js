@@ -113,27 +113,27 @@ function descobrindoLuaEAlterandoInfo() {
   let conta = ((anoDoisUltimosDigitos + 2) * 11 + dia + mes) % 30;
   //const conta = 28;
   if (conta >= 0 && conta <= 7) {
-    faseDaLua.setAttribute('src', './lua-nova.png');
+    faseDaLua.setAttribute('src', '../assets/imagens/lua-nova.png');
     luaDeHoje.innerText = `Lua Nova`;
-    luaImg.setAttribute('src', './lua-nova.png');
+    luaImg.setAttribute('src', '../assets/imagens/lua-nova.png');
     luaDescription.innerText = `Lua Nova`;
     pDescription.innerText = `É o momento em que não se vê a Lua no céu. Nesse período, apenas a face que não é voltada para a Terra recebe a luz solar e por esse motivo não a enxergamos no céu.`;
   } else if (conta >= 8 && conta <= 14) {
-    faseDaLua.setAttribute('src', './lua-crescente.png');
+    faseDaLua.setAttribute('src', '../assets/imagens/lua-crescente.png');
     luaDeHoje.innerText = `Lua Crescente`;
-    luaImg.setAttribute('src', './lua-crescente.png');
+    luaImg.setAttribute('src', '../assets/imagens/lua-crescente.png');
     luaDescription.innerText = `Lua Crescente`;
     pDescription.innerText = `Considerada a fase de transição da Lua nova para a Lua cheia, a Lua crescente é caracterizada por receber luminosidade em apenas uma face (no lado oposto da minguante).`;
   } else if (conta >= 15 && conta < 21) {
-    faseDaLua.setAttribute('src', './lua-cheia.png');
+    faseDaLua.setAttribute('src', '../imagens/lua-cheia.png');
     luaDeHoje.innerText = `Lua Cheia`;
-    luaImg.setAttribute('src', './lua-cheia.png');
+    luaImg.setAttribute('src', '../assets/imagens/lua-cheia.png');
     luaDescription.innerText = `Lua Cheia`;
     pDescription.innerText = `Nessa fase, a lua está posicionada do lado oposto ao Sol. Por essa razão, conseguimos visualizar por completo a sua face iluminada. Uma vez que a Terra está posicionada entre a lua e o Sol, é nessa fase que acontecem os eclipses lunares.`;
   } else if (conta >= 21 && conta <= 28) {
-    faseDaLua.setAttribute('src', './lua-minguante.png');
+    faseDaLua.setAttribute('src', '../assets/imagens/lua-minguante.png');
     luaDeHoje.innerText = `Lua Minguante`;
-    luaImg.setAttribute('src', './lua-minguante.png');
+    luaImg.setAttribute('src', '../assets/imagens/lua-minguante.png');
     luaDescription.innerText = `Lua Minguante`;
     pDescription.innerText = `Também chamada de quarto minguante, tem como característica a formação de um semicírculo do lado oposto ao quarto crescente. Lua nova: é caracterizada pela iluminação da Lua somente do lado oposto ao visível na Terra. Portanto, nessa fase não é possível ver a Lua a olho nu do planeta Terra.`;
   }
